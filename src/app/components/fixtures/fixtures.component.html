@@ -1,0 +1,41 @@
+<!-- Masthead -->
+<header class="masthead text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="title col-xl-9 mx-auto">
+        <h1 class="mb-5">Fixtures</h1>
+        <app-arrow scrollId="fixtures" colour="white"></app-arrow>
+      </div>
+    </div>
+  </div>
+</header>
+  
+<div class="main-container container">
+
+  <div id="fixtures" class="anchor"></div>
+  <hr/>
+
+  <div class="line-title">
+    <span class="text-muted">
+      Past Fixtures
+    </span>
+  </div>
+
+  <div *ngFor="let fixture of pastFixtures | slice:0:pastLoaded">
+    <app-fixture [fixture]="fixture"></app-fixture>
+  </div>
+  <p [hidden]="pastLoaded >= pastFixtures.length" class="link mx-auto" (click)="loadMorePast()">Load more...</p>
+
+  <div class="line-title mt-5">
+    <span class="text-muted">
+      Upcoming Fixtures
+    </span>
+  </div>
+
+  <div *ngFor="let fixture of upcomingFixtures | slice:0:futureLoaded">
+    <app-fixture [fixture]="fixture"></app-fixture>
+  </div>
+  <p [hidden]="futureLoaded >= upcomingFixtures.length" class="link mx-auto" (click)="loadMoreFuture()">Load more...</p>
+
+</div>

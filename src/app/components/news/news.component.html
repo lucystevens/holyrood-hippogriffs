@@ -1,0 +1,49 @@
+<!-- Masthead -->
+<header class="masthead text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="title col-xl-9 mx-auto">
+        <h1 class="mb-5">News</h1>
+        <app-arrow scrollId="news" colour="white"></app-arrow>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="main-container container">
+
+  <div id="news" class="anchor"></div>
+  <hr/>
+
+  <div class="row my-4">
+    <div *ngFor="let article of articles | slice:0:loaded" class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-7">
+            <a routerLink="/article/{{article.id}}">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="{{getImageUrl(article)}}" alt="">
+            </a>
+          </div>
+          <div class="col-md-5">
+            <h3>{{article.title}}</h3>
+            <a class="card-link card-bottom" routerLink="/article/{{article.id}}">Read more..</a>
+
+            <div class="tags">
+              <p class="text-muted" style="display:inline;">Tags: </p>
+              <span *ngFor="let tag of article.tags" class="badge badge-primary">{{tag}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer text-muted">
+          Published by {{article.author}} on {{article.date | date:'fullDate'}}
+      </div>
+
+    </div>
+  </div>
+
+  <p [hidden]="loaded >= articles.length" class="link mx-auto" (click)="loadMore()">Load more...</p>
+
+</div>

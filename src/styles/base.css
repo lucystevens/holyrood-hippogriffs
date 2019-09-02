@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.main-container {
+    padding-top: 54px;
+    min-height: 86vh;
+}
+
+div.anchor {
+    position: relative;
+    top: -54px;
+}
+  
+@media (min-width: 992px) {
+    .main-container {
+        padding-top: 56px;
+    }
+}
+
+.title h1 {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                    0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

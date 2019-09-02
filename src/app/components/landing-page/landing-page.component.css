@@ -1,0 +1,58 @@
+header.masthead {
+    background: url("/assets/images/covers/flag-sm.png") no-repeat center right;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        background: url("/assets/images/covers/flag-md.png") no-repeat center right;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1440px) {
+    header.masthead {
+        background: url("/assets/images/covers/flag-lg.png") no-repeat center right;
+        background-size: cover;
+    }
+}
+
+.title-box {
+    z-index:999;
+}
+
+.cover-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0px 10px;
+}
+
+@media (min-width: 992px){
+    .cover-title {
+        text-align: left;
+    }
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+  
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+  
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item a.features-icons-icon:hover {
+    text-decoration: none;
+}
+  
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+  
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}

@@ -1,0 +1,31 @@
+header.masthead {
+    background: url("/assets/images/covers/team-sm.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        background: url("/assets/images/covers/team-md.jpg") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1440px) {
+    header.masthead {
+        background: url("/assets/images/covers/team-lg.jpg") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+div.title{
+    position: relative;
+    top: 20px;
+}
+
+.tool-bar {
+    margin: 0px;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}

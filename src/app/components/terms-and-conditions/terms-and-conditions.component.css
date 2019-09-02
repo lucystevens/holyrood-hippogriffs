@@ -1,0 +1,17 @@
+p.body-text {
+    color: #595959;
+    font-size: 14px;
+    text-align: justify;
+}
+
+p {
+    font-size: 15px;
+}
+
+h5, h6 {
+    margin: 1rem 0rem;
+}
+
+h5 {
+    margin-top: 2rem;
+}

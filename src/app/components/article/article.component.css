@@ -1,0 +1,22 @@
+.back i {
+    font-size: 2rem;
+}
+
+.back-text {
+    display:inline;
+    position: relative;
+    left: 10px;
+    bottom: 7px;
+}
+
+.photo-credit {
+    text-align: right;
+}
+
+.photo-credit a {
+    color: #6c757d;
+}
+
+span.badge {
+    margin: 2px;
+}

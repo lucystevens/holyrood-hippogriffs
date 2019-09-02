@@ -1,0 +1,40 @@
+header.masthead {
+    background: url("/assets/images/covers/news-sm.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        background: url("/assets/images/covers/news-md.jpg") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1440px) {
+    header.masthead {
+        background: url("/assets/images/covers/news-lg.jpg") no-repeat center center;
+        background-size: cover;
+    }
+}
+
+div.card {
+    margin: 10px;
+}
+
+span.badge {
+    margin: 2px;
+}
+
+div.tags {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    div.tags {
+        margin-top: 40%;
+    }
+}
+
+p.link {
+    text-align:center;
+}

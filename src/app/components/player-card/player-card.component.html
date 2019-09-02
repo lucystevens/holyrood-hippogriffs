@@ -1,0 +1,10 @@
+<div class="card shadow-lg rounded">
+  <img class="card-img-top img-fluid" src="{{getPhoto()}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{player.name}}</h5>
+    <hr>
+    <p class="card-text"><b>Positions: </b> {{player.positions | array}}</p>
+    <p class="card-text"><b>Experience: </b> {{player.startedPlaying | experience}}</p>
+    <p class="card-text">{{player.info}}</p>
+  </div>
+</div>
