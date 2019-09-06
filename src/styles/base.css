@@ -2,8 +2,16 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 @font-face {
-    font-family: 'Sunset Boulevard';
-    src: url(/assets/fonts/SunsetBoulevard.otf) format("opentype");
+    font-family: "Sunset Boulevard";
+    src: url("/assets/fonts/SunsetBoulevard.eot"); /* IE9 Compat Modes */
+    src: url("/assets/fonts/SunsetBoulevard.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("/assets/fonts/SunsetBoulevard.svg") format("svg"), /* Legacy iOS */
+        url("/assets/fonts/SunsetBoulevard.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("/assets/fonts/SunsetBoulevard.woff") format("woff"), /* Modern Browsers */
+        url("/assets/fonts/SunsetBoulevard.woff2") format("woff2"), /* Modern Browsers */
+        url("/assets/fonts/SunsetBoulevard.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .main-container {
