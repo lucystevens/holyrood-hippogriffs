@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('navbarToggler', { static: true }) navbarToggler:ElementRef;
+  @ViewChild('navbarToggler', { static: true }) navbarToggler: ElementRef;
 
   constructor(private router: Router) {}
 
@@ -21,7 +21,11 @@ export class AppComponent {
     }
   }
 
-  isActive(route: string): boolean{
-    return route == this.router.url;
+  isActive(route: string): boolean {
+    return route === this.router.url;
+  }
+
+  getBrandText(): string {
+    return window.innerWidth < 466? "HH"  : "Holyrood Hippogriffs";
   }
 }

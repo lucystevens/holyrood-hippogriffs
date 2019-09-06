@@ -22,10 +22,10 @@ export class LandingPageComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
           return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     });
 
-    let mobile = window.innerWidth < 768;
+    const mobile = window.innerWidth < 768;
     this.images = this.carouselService.getCarouselImages(mobile);
   }
 

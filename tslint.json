@@ -84,7 +84,7 @@
     ],
     "prefer-const": true,
     "quotemark": [
-      true,
+      false,
       "single"
     ],
     "radix": true,
@@ -112,7 +112,6 @@
       true,
       "check-branch",
       "check-decl",
-      "check-operator",
       "check-separator",
       "check-type"
     ],

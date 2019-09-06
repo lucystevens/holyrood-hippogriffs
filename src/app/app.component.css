@@ -2,14 +2,17 @@ footer.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 130px;
+    height: 160px;
+}
+
+@media (min-width: 446px) {
+    footer.footer {
+        height: 130px;
+    }
 }
 
 @media (min-width: 992px) {
     footer.footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
         height: 85px;
     }
 }
@@ -28,6 +31,7 @@ footer.footer {
 }
 
 #router-outlet{
+    padding-top:90px;
     padding-bottom: 140px;
 }
 
