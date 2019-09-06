@@ -12,7 +12,7 @@ For each image with name {name} upload 4 variants (w x h);
  - {name}-pt-sm (450 x 610 px)
 
 
- Key
+ ## Key
  ls: Landscape - width > height
  pt: Portrait - height > width
 
