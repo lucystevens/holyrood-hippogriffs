@@ -3,7 +3,7 @@
   <ngb-carousel class="carousel">
     <ng-template *ngFor="let image of images" ngbSlide>
       <div class="img-wrapper">
-        <img [src]="image.src" alt="{{image.title}}" height="100%">
+        <img [src]="image.src" alt="{{image.title}}" width="100%">
       </div>
       <div class="carousel-caption">
         <h3>{{image.title}}</h3>

@@ -25,8 +25,7 @@ export class LandingPageComponent implements OnInit {
       window.scrollTo(0, 0);
     });
 
-    const mobile = window.innerWidth < 768;
-    this.images = this.carouselService.getCarouselImages(mobile);
+    this.images = this.carouselService.getCarouselImages();
   }
 
 }

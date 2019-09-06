@@ -9,19 +9,31 @@ export class CarouselService {
 
   constructor() { }
 
-  getCarouselImages(mobile: boolean = false): CarouselImage[]{
+  getCarouselImages(): CarouselImage[]{
     let images = [];
     for(let image of CAROUSEL_IMAGES){
       let cloned = this.cloneImage(image);
-      cloned.src = this.getImageUrl(cloned.src, mobile);
+      cloned.src = this.getImageUrl(cloned.src);
       images.push(cloned);
     }
     return images;
   }
 
-  getImageUrl(src: string, mobile: boolean): string {
-    let suffix = mobile? "-sm" : "-lg";
-    return "/assets/images/carousel/" + src + suffix + ".jpg";
+  getImageUrl(src: string): string {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    let size = "-sm";
+    if (width > 992) {
+      size = "-lg";
+    }
+    else if(width > 466){
+      size = "-md";
+    }
+
+    let orientation = width > height? "-ls" : "-pt";
+
+    return "/assets/images/carousel/" + src + orientation + size + ".jpg";
   }
 
   cloneImage(image: CarouselImage): CarouselImage{
