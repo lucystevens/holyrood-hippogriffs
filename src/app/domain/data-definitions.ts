@@ -32,6 +32,17 @@ export class Video {
     thumbnail: string;
 }
 
+export class CarouselImage {
+    title: string;
+    description?: string;
+    routerLink?: string;
+
+    src: string;
+    photoCredit?: string;
+    creditLink?: string;
+
+}
+
 export class Config {
     contactEmail: string;
 }

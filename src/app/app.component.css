@@ -1,4 +1,38 @@
 footer.footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+}
+
+@media (min-width: 992px) {
+    footer.footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 85px;
+    }
+}
+
+.navbar-brand {
+    font-family: 'Sunset Boulevard', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+}
+
+.bg-hh{
+    background: url("/assets/images/claw.png") #330c0c no-repeat center right;
+    background-size: 25%;
+
+
+}
+
+#router-outlet{
+    padding-bottom: 140px;
+}
+
+@media (min-width: 992px) {
+    #router-outlet{
+        padding-bottom: 100px;
+    }
 }

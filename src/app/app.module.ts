@@ -20,6 +20,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FixtureComponent } from './components/fixture/fixture.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { FixtureComponent } from './components/fixture/fixture.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    NgbModule,
     MarkdownModule.forRoot()
   ],
   providers: [],

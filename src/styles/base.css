@@ -1,27 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-.main-container {
-    padding-top: 54px;
-    min-height: 86vh;
+@font-face {
+    font-family: 'Sunset Boulevard';
+    src: url(/assets/fonts/SunsetBoulevard.otf) format("opentype");
 }
 
-div.anchor {
-    position: relative;
-    top: -54px;
+.main-container {
+    padding-top: 90px;
+    min-height: 86vh;
 }
   
 @media (min-width: 992px) {
     .main-container {
-        padding-top: 56px;
+        padding-top: 90px;
     }
 }
 
-.title h1 {
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                    0px 8px 13px rgba(0,0,0,0.1),
-                    0px 18px 23px rgba(0,0,0,0.1);
-    text-align: center;
+h1.page-title {
+    font-family: 'Sunset Boulevard', sans-serif;
+    font-size: 5rem;
+    padding-top:20px;
 }
 
 .link {
@@ -34,4 +33,9 @@ div.anchor {
 .link:hover {
     color: #0056b3;
     text-decoration: underline;
+}
+
+#page-content {
+    min-height: 100vh;
+    position: relative;
 }

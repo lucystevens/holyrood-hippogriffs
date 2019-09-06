@@ -1,18 +1,18 @@
 header.masthead {
-    background: url("/assets/images/covers/flag-sm.png") no-repeat center right;
+    background: url("/assets/images/covers/main-sm.jpg") no-repeat center center;
     background-size: cover;
 }
 
 @media (min-width: 768px) {
     header.masthead {
-        background: url("/assets/images/covers/flag-md.png") no-repeat center right;
+        background: url("/assets/images/covers/main-md.jpg") no-repeat center center;
         background-size: cover;
     }
 }
 
 @media (min-width: 1440px) {
     header.masthead {
-        background: url("/assets/images/covers/flag-lg.png") no-repeat center right;
+        background: url("/assets/images/covers/main-lg.jpg") no-repeat center center;
         background-size: cover;
     }
 }
@@ -22,8 +22,10 @@ header.masthead {
 }
 
 .cover-title {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Sunset Boulevard', sans-serif;
     margin: 0px 10px;
+    text-align: center;
+    font-size: 10vh;
 }
 
 @media (min-width: 992px){
