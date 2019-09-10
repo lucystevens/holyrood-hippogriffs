@@ -1,18 +1,3 @@
-header.masthead {
-    background: url("/assets/images/covers/about-sm.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-@media (min-width: 768px) {
-    header.masthead {
-        background: url("/assets/images/covers/about-md.jpg") no-repeat center center;
-        background-size: cover;
-    }
-}
-
-@media (min-width: 1440px) {
-    header.masthead {
-        background: url("/assets/images/covers/about-lg.jpg") no-repeat center center;
-        background-size: cover;
-    }
+ul {
+    list-style-type: none;
 }
