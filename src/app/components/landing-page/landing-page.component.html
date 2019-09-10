@@ -6,8 +6,14 @@
         <img [src]="image.src" alt="{{image.title}}" width="100%">
       </div>
       <div class="carousel-caption">
-        <h3>{{image.title}}</h3>
-        <p>{{image.description}}</p>
+        <a class="no-underline" *ngIf="image.routerLink" routerLink="{{image.routerLink}}">
+          <h1 class="image-title text-shadow">{{image.title}}</h1>
+        </a>
+        <h1 class="image-title text-shadow" *ngIf="!image.routerLink">{{image.title}}</h1>
+        <h4 *ngIf="image.description text-shadow">{{image.description}}</h4>
+        <a *ngIf="image.photoCredit" title="{{image.photoCredit}}" class="image-credit text-shadow no-underline" routerLink="{{image.creditLink}}">
+          📷: {{image.photoCredit}}
+        </a>
       </div>
     </ng-template>
   </ngb-carousel>

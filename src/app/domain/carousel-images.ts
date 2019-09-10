@@ -3,16 +3,16 @@ import { CarouselImage } from './data-definitions';
 export const CAROUSEL_IMAGES: CarouselImage[] = [
     {
         src: "firsts",
-        title: "Edinburgh Firsts",
-        description: "Join the first team!",
+        title: "Join the Club!",
         photoCredit: "Mark Hill ImageMaker",
-        routerLink: "/news"
+        creditLink: "https://www.facebook.com/markhillphotography",
+        routerLink: "/join"
     },
     {
         src: "seconds",
-        title: "Edinburgh Seconds",
-        description: "Join the seconds team!",
+        title: "About us",
         photoCredit: "Mark Hill ImageMaker",
-        routerLink: "/fixtures"
+        creditLink: "https://www.facebook.com/markhillphotography",
+        routerLink: "/about"
     }
 ];

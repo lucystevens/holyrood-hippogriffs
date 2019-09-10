@@ -1,24 +1,30 @@
-header.masthead {
-    background: url("/assets/images/covers/main-sm.jpg") no-repeat center center;
-    background-size: cover;
+.image-title {
+    color: #ffffff;
+    text-decoration: none!important;
 }
 
-@media (min-width: 768px) {
-    header.masthead {
-        background: url("/assets/images/covers/main-md.jpg") no-repeat center center;
-        background-size: cover;
-    }
+.image-title:hover{
+    color:#c4c4c4;
 }
 
-@media (min-width: 1440px) {
-    header.masthead {
-        background: url("/assets/images/covers/main-lg.jpg") no-repeat center center;
-        background-size: cover;
-    }
+a.no-underline:hover{
+    text-decoration: none!important; 
 }
 
 .title-box {
     z-index:999;
+}
+
+a.image-credit{
+    color: #ffffff;
+}
+
+a.image-credit:hover{
+    color:#c4c4c4;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .cover-title {
