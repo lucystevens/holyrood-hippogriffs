@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FixtureComponent } from './components/fixture/fixture.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { JoinComponent } from './components/join/join.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ExperiencePipe,
     ArrowComponent,
     ContactFormComponent,
-    FixtureComponent
+    FixtureComponent,
+    JoinComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

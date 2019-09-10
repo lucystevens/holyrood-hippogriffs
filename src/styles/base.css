@@ -15,14 +15,8 @@
 }
 
 .main-container {
-    padding-top: 90px;
+    padding-top: 10px;
     min-height: 86vh;
-}
-  
-@media (min-width: 992px) {
-    .main-container {
-        padding-top: 90px;
-    }
 }
 
 h1.page-title {

@@ -9,6 +9,7 @@ import { PrivacyPolicyComponent } from '../components/privacy-policy/privacy-pol
 import { TermsAndConditionsComponent } from '../components/terms-and-conditions/terms-and-conditions.component';
 import { SquadComponent } from '../components/squad/squad.component';
 import { ContactFormComponent } from '../components/contact-form/contact-form.component';
+import { JoinComponent } from '../components/join/join.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'privacy-policy', component: PrivacyPolicyComponent},
   { path: 'terms-conditions', component: TermsAndConditionsComponent},
   { path: 'squad', component: SquadComponent},
-  { path: 'contact-us', component: ContactFormComponent}
+  { path: 'contact-us', component: ContactFormComponent},
+  { path: 'join', component: JoinComponent}
 ];
 
 @NgModule({
