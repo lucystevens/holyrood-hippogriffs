@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { CarouselService } from 'src/app/services/carousel.service';
 import { CarouselImage } from 'src/app/domain/data-definitions';
@@ -25,6 +25,11 @@ export class LandingPageComponent implements OnInit {
       window.scrollTo(0, 0);
     });
 
+    this.images = this.carouselService.getCarouselImages();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event:any) {
     this.images = this.carouselService.getCarouselImages();
   }
 
