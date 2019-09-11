@@ -7,9 +7,10 @@ export const ARTICLES : Article[] = [
         image: "welcomeweek.jpg",
         content: 
             `Whether you're a fresher in your first year of University or
-            an aging PhD student looking for something new to try, come visit our fan club
+            an aging PhD student looking for something new to try, come visit the UoE quidditch fan club
             at the Edinburgh University Students' Association Activities Fair! <br><br>
-            Come find the stall in the upper hall today or tomorrow from 10am-4pm to sign up!
+            We'll have club representatives there both days so come
+            find the stall in the upper hall from 10am-4pm to sign up!
             `,
         author: "Luke Stevens",
         date: new Date(2019, 8, 11),
