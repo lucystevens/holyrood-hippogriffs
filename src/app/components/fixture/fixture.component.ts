@@ -18,7 +18,7 @@ export class FixtureComponent implements OnInit {
   }
 
   getTeamImage() : string {
-    return "assets/images/" + this.fixture.opposition.replace(" ", "-").toLocaleLowerCase() + ".png";
+    return "assets/images/teams/" + this.fixture.teamLogo;
   }
 
   isPast() : boolean {

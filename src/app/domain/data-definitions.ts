@@ -20,10 +20,15 @@ export class Player {
 }
 
 export class Fixture {
+    id: number;
+    team: string;
     opposition: string;
+    teamLogo: string;
     score?: string;
     date: Date;
     location: string;
+    info: string;
+    tournament: string;
 }
 
 export class Video {
