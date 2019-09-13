@@ -26,11 +26,9 @@ export const ARTICLES : Article[] = [
         content: 
             `Coming to Edinburgh in September? Want to play for the 3-time Scottish champions?
             Join Holyrood Hippogriffs, Edinburgh's premier quidditch club, for open training on
-            14th September at 14:00 just off middle meadow walk.
-
+            14th September at 14:00 just off middle meadow walk.<br><br>
             Quidditch is a full contact, mixed gender sport, and not just for Harry Potter fans.
-            Make sure to bring sports clothes and plenty of water.  Open to all abilities.
-            
+            Make sure to bring sports clothes and plenty of water.  Open to all abilities.<br><br>
             https://www.eusa.ed.ac.uk/ents/event/13927/
             `,
         author: "Luke Stevens",
